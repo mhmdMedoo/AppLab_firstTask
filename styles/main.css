@@ -57,6 +57,19 @@ header nav{
     display: flex;
     justify-content: space-between;
 }
+header nav #openMenu,header nav #closeMenu{
+      font-size: 30px;
+      color: var(--blue-color);
+      cursor: pointer;
+      display: none;
+}
+
+header nav #closeMenu{
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
 
 header nav #logo{
 font-weight: 600;

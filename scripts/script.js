@@ -1,4 +1,24 @@
+var mune = document.getElementById("mune");
+var openMenuBtn = document.getElementById("openMenu");
+var closeMenuBtn = document.getElementById("closeMenu");
+
+openMenuBtn.onclick = function () {
+    mune.style.display = "block";
+    closeMenuBtn.style.display = "block";
+    this.style.display = "none";
+}
+closeMenuBtn.onclick = function () {
+    mune.style.display = "none";
+    openMenuBtn.style.display = "block";
+    this.style.display = "none";
+}
+
+
+
+
 var plus = document.getElementsByClassName("fa-plus");
+
+
 for(x=0; x<plus.length; x++){
     plus[x].onclick = function () {
         if(this.classList[1] == "fa-plus"){
